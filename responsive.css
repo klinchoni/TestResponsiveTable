@@ -1,72 +1,25 @@
 @media (max-width: 767px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    nav img {
-        padding-bottom: 15px;
-    }
-
-    header nav {                                  
-        display: flex;
-        width: 70%;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    nav li {
-        padding-bottom: 5px;
-    }
-
-    .header {
-        padding: 0;
-    }
 
     body {
         font-size: 14px;
     }
-    
-    table {
-      width: 100%;
-      display: block;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+
+    .header,
+    .offer,
+    .our-team,
+    .motivation,
+    .blog-news,
+    footer {
+        width: 100%;
+        padding: 10px;
     }
 
-    th, td {
-      min-width: 100px; /* Adjust as needed */
-      white-space: nowrap;
-    } 
-
-    .our-team ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .our-team ul li img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .motivation ul {
-        display: flex;
+    header nav{
         flex-direction: column;
-        justify-content: space-around;
-        margin: 0 100px;
+        align-items: unset;
     }
 
-    .blog-news ul {
+    .blog-news ul{
         flex-direction: column;
     }
 
@@ -78,5 +31,44 @@
         box-shadow: 0 0.3rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
         margin-top: 10px;
     }
+
+    .motivation ul{
+        flex-direction: column;
+    }
+    
+    .img img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
+@media (min-width:768px) {
+    
+    body {
+        font-size: 18px;
+    }
+    
+    .header,
+    .offer,
+    .our-team,
+    .motivation,
+    .blog-news,
+    footer {
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .blog-news ul .news {
+        list-style: none outside;
+        display: flex;
+        text-align: center;
+        flex: 0 0 35%;
+        box-shadow: 0 0.3rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+        width: 50%;
+    }
+    
+    .img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
